@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="b9047062-e68c-4ebe-974a-aaa1ec17b8f2" ItemType="Solution" CreatedBy="RUPESHD" Created="202001281013" GingerVersion="3.5.0.0" Version="9" LastUpdateBy="RUPESHD" LastUpdate="202001290755" />
+<Solution AlmType="QC" Guid="b9047062-e68c-4ebe-974a-aaa1ec17b8f2" Name="TDM_TEST_RU_Pro" ParentGuid="00000000-0000-0000-0000-000000000000">
+<ApplicationPlatforms>
+<ApplicationPlatform AppName="MyWebApp" CoreGUID="00000000-0000-0000-0000-000000000000" Guid="91c993d9-c9dd-482c-9264-8734942a58ac" GUID="00000000-0000-0000-0000-000000000000" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" />
+</ApplicationPlatforms>
+
+<ExecutionLoggerConfigurationSetList>
+<ExecutionLoggerConfiguration ExecutionLoggerConfigurationExecResultsFolder="~\ExecutionResults" ExecutionLoggerConfigurationIsEnabled="True" ExecutionLoggerConfigurationMaximalFolderSize="250" Guid="c124708e-0dc0-469e-b230-58f936db6c36" IsSelected="True" ParentGuid="00000000-0000-0000-0000-000000000000" SelectedDataRepositoryMethod="TextFile" Seq="0" />
+</ExecutionLoggerConfigurationSetList>
+
+<HTMLReportsConfigurationSetList>
+<HTMLReportsConfiguration Guid="49fd1f02-d611-4866-b309-af2e9cc03965" HTMLReportConfigurationMaximalFolderSize="0" HTMLReportsFolder="~\HTMLReports" HTMLReportTemplatesSeq="1" IsSelected="True" ParentGuid="00000000-0000-0000-0000-000000000000" Seq="0" />
+</HTMLReportsConfigurationSetList>
+
+<Variables>
+<VariableString Guid="b2a2fbca-4d91-4256-b64c-87455695fc88" InitialStringValue="Random" MappedOutputType="None" Name="First Name" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" />
+<VariableString Guid="a103bbbf-3093-4593-9d6e-2c0b99eafcfb" InitialStringValue="test1" MappedOutputType="None" Name="email Id" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" />
+<VariableDynamic Guid="f6a5f481-2f07-4b74-b76e-76aeea09f6e0" MappedOutputType="None" Name="Password" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" ValueExpression="123456" />
+<VariableString Guid="2a5a9794-7aa9-454f-8db6-7dccba786585" InitialStringValue="Test1234" MappedOutputType="None" Name="Last Name" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" />
+</Variables>
+</Solution></GingerRepositoryItem>

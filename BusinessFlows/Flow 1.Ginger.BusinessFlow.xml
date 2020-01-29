@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="da935ac2-286b-4c53-947a-9beb2dee04d8" ItemType="BusinessFlow" CreatedBy="RUPESHD" Created="202001281013" GingerVersion="3.5.0.0" Version="50" LastUpdateBy="RUPESHD" LastUpdate="202001290909" />
+<BusinessFlow Elapsed="9427" Guid="da935ac2-286b-4c53-947a-9beb2dee04d8" Name="Flow 1" ParentGuid="00000000-0000-0000-0000-000000000000" Source="Ginger" Status="Unknown">
+<Activities>
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="Login_To_Google" AutomationStatus="Development" ErrorHandlerMappingType="AllAvailableHandlers" Guid="4d208b96-872a-465a-9e75-02f03e1e5489" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" TargetApplication="MyWebApp">
+<Acts>
+<ActBrowserElement Active="True" Description="Browser Action" Guid="b90972a7-ec20-45f5-b2a8-4471209947c0" ImplicitWait="60" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="f0d4c322-b91a-40f7-8893-e43609b83440" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="GotoURL" />
+<ActInputValue Guid="72488c2d-dc7d-4f18-ba75-ddbcf92cd529" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="https://accounts.google.com/signup/v2/webcreateaccount?service=mail&amp;continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&amp;flowName=GlifWebSignIn&amp;flowEntry=SignUp" />
+<ActInputValue Guid="2987f8e2-faa2-4d6b-9142-5af43ec50ff9" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="a0c9e15e-faf8-40cd-ab46-58fd36f23ee2" Param="GotoURLType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Current" />
+<ActInputValue Guid="6239daf5-f751-44b8-a4ad-2d836730bd53" Param="URLSrc" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Static" />
+<ActInputValue Guid="2b7d05e4-f554-4856-a70b-324795294775" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActBrowserElement>
+<ActUIElement Active="True" Description="SetText - input text firstName" Guid="a63b2d28-14d4-4faa-bf45-c94e8b4db895" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="82bfde55-d6ba-46c5-98f4-a3c32a3ad9a9" Param="ElementAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="SetText" />
+<ActInputValue Guid="7cd1875d-1ee1-4241-a9d7-d4c55ab3eeed" Param="ElementLocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="8c9cd39b-f20f-4daf-92df-7b1fb88e130e_c5d02e49-a801-4c02-9d8b-22d9b9ecf3b7" />
+<ActInputValue Guid="16136256-d1dc-452d-ae93-3564fcab91bf" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{Var Name=First Name}" />
+<ActInputValue Guid="68f6bdec-39c3-40ca-83b1-efd9437ee1c9" Param="ElementLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="POMElement" />
+<ActInputValue Guid="2f44b559-c306-46e5-be32-83b3a55fd064" Param="ElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="TextBox" />
+<ActInputValue Guid="998ac078-9e3c-4dd0-8ad5-15739dcac247" Param="TargetLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="3124e339-d8ca-4b69-a842-551f58e532ba" Param="TargetElementType" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="b17f6425-2b49-4636-8b99-8eaaf8102fa7" Param="HandleElementType" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="2a8ecac8-3e7a-4d40-b8e2-12d7d4f8f36b" Param="HandleActionType" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActUIElement>
+<ActUIElement Active="True" Description="SetText - input text lastName" Guid="abe1ac1e-ccb2-4ac9-a3ad-9ee4bb6c3169" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="4bdc5372-272b-4eec-b8a7-1b58d44bf3be" Param="ElementAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="SetText" />
+<ActInputValue Guid="bb55d969-4676-48fb-9dab-ec440b020da3" Param="ElementLocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="8c9cd39b-f20f-4daf-92df-7b1fb88e130e_1a0a173e-e384-4203-982f-780932b2c481" />
+<ActInputValue Guid="7e3ea2e8-bc81-4c42-8b5e-56fb294b15e4" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{Var Name=Last Name}" />
+<ActInputValue Guid="a05b671f-3a7e-4745-a655-8a067e8f303a" Param="ElementLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="POMElement" />
+<ActInputValue Guid="aef21fcc-0d6a-423c-baf1-7177948bbbe9" Param="ElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="TextBox" />
+<ActInputValue Guid="82a7c480-222a-418c-8b98-7b42c705a3d6" Param="TargetLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="8bfee87b-4dd1-4a39-914d-d1ded86faa5a" Param="TargetElementType" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="8d385e53-599b-4a7d-b0a2-ff0cd97244eb" Param="HandleElementType" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="da45c721-bc7b-4b0d-8f2c-3f456c4ee29d" Param="HandleActionType" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActUIElement>
+<ActUIElement Active="True" Description="SetText - input text Username username" Guid="69d1fa07-4fb2-4d96-8413-4062a28a9a8a" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="cac4459f-170d-41c4-b356-57b336fc9495" Param="ElementAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="SetText" />
+<ActInputValue Guid="28dc15bf-fe90-491f-b96a-4c83bc8c3a01" Param="ElementLocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="8c9cd39b-f20f-4daf-92df-7b1fb88e130e_274690ef-5916-44b7-915d-a31c4a2ab965" />
+<ActInputValue Guid="d1a023e2-e437-411a-b41e-b7da5559dc51" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{Var Name=email Id}" />
+<ActInputValue Guid="7f4d16fa-2656-44b9-90bc-74df2568f32e" Param="ElementLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="POMElement" />
+<ActInputValue Guid="dd86aafc-d6ab-4d39-95fd-f166c6a459b0" Param="ElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="TextBox" />
+<ActInputValue Guid="c148e200-de16-4317-821d-002b7c3c935b" Param="TargetLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="b6ed888b-5cee-4b0c-94d8-82357238a1ad" Param="TargetElementType" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="af42fdb6-e216-4e42-b0fb-d112f2df0a0d" Param="HandleElementType" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="73a8f15b-6905-4300-b4fc-b4454fc40491" Param="HandleActionType" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActUIElement>
+<ActUIElement Active="True" Description="SetText - input password Passwd" Guid="c1a7cc00-eeee-46ee-b454-a99030c6edda" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="b01fb16a-57f9-4b9f-a920-2b4297346fe0" Param="ElementAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="SetText" />
+<ActInputValue Guid="56d1822f-4ebb-4052-a24d-f006d8f02f5d" Param="ElementLocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="8c9cd39b-f20f-4daf-92df-7b1fb88e130e_4f1f5dce-bf42-4c3d-ab64-d53bc33cde4a" />
+<ActInputValue Guid="d246df85-6dc3-44a6-b7eb-d4388492d0d5" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{Var Name=Password}" />
+<ActInputValue Guid="0a5b090e-d21b-4ac1-bbae-c89a778de393" Param="ElementLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="POMElement" />
+<ActInputValue Guid="dbff3c81-e438-4040-84dd-d77c1fd22aaa" Param="ElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="TextBox" />
+<ActInputValue Guid="7e6f1d1b-2a3d-4cd1-a513-13f65f182499" Param="TargetLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="c6328b35-3561-49cc-acc7-793de2df1a77" Param="TargetElementType" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="a45609d5-1b18-4be9-a53b-c7e26748d30e" Param="HandleElementType" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="b5c2000b-e4f8-4b3f-8907-0b061cc9bfea" Param="HandleActionType" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActUIElement>
+<ActUIElement Active="True" Description="SetText - input password ConfirmPasswd" Guid="33d7c6b7-462a-4586-9674-2dc0c9b8b757" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="283c8dc4-bae2-4aea-9615-157480240a34" Param="ElementAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="SetText" />
+<ActInputValue Guid="8b45f666-513a-4803-a638-193e856bcce6" Param="ElementLocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="8c9cd39b-f20f-4daf-92df-7b1fb88e130e_6e00f19e-a004-4c4c-8761-9bca9f807a5d" />
+<ActInputValue Guid="3186ad79-a746-41d0-a9a6-03f59af9f318" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{Var Name=Password}" />
+<ActInputValue Guid="47ea87d0-5b3f-4310-b76d-3c3cf9a6b0ee" Param="ElementLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="POMElement" />
+<ActInputValue Guid="1a9d0941-e393-4eac-92ae-6cdf5bc93729" Param="ElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="TextBox" />
+<ActInputValue Guid="d4952b60-ad5a-4c1a-818f-b174d0cdda1a" Param="TargetLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="a038c2ad-e669-4fb2-aaed-34b094281095" Param="TargetElementType" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="aeb42490-2ed4-45bb-8044-f00bce1c9c1b" Param="HandleElementType" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="b0973575-4011-4750-b644-0ca213a1491e" Param="HandleActionType" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActUIElement>
+</Acts>
+</Activity>
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="TDM" ActivityName="Test1" AutomationStatus="Development" ErrorHandlerMappingType="AllAvailableHandlers" Guid="2e3f427a-5b85-4229-803b-3cba1ebb0443" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" TargetApplication="MyWebApp">
+<Acts>
+<ActDummy Active="True" Description="Dummy Action" Guid="f098c9b8-b76e-4232-9333-b3c2d9504611" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow" />
+</Acts>
+</Activity>
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="TDM" ActivityName="Test2" AutomationStatus="Development" ErrorHandlerMappingType="AllAvailableHandlers" Guid="19ed0922-3cea-4e10-9f82-1013244a8178" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" TargetApplication="MyWebApp">
+<Acts>
+<ActDummy Active="True" Description="Dummy Action" Guid="85d9068d-8c2c-4d1a-891a-f9775d7528bf" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow" />
+</Acts>
+</Activity>
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="TDM Builder" ActivityName="Test3" AutomationStatus="Development" ErrorHandlerMappingType="AllAvailableHandlers" Guid="a96f3de4-55a5-4ec6-adfd-37145f1f4bd3" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" TargetApplication="MyWebApp">
+<Acts>
+<ActDummy Active="True" Description="Dummy Action" Guid="faeb301e-95bf-47e1-9288-24990263e2c9" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow" />
+</Acts>
+
+<Variables>
+<VariableString Guid="4d3b521b-c7de-4f6e-9bb2-88c1e3fd7ed2" InitialStringValue="123" MappedOutputType="None" Name="Password " ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" />
+</Variables>
+</Activity>
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Web Testing for TDM" ActivityName="User name" AutomationStatus="Development" ErrorHandlerMappingType="AllAvailableHandlers" Guid="75fc66e2-42b5-4423-a5ac-eeb3c73d9075" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="0%" TargetApplication="MyWebApp">
+<Variables>
+<VariableSelectionList Guid="05d6e3a3-d661-4f5a-9fa8-cc413b1fa2dd" MappedOutputType="None" Name="Login user name" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" Value="User 1">
+<OptionalValuesList>
+<OptionalValue Guid="30058957-12f0-48e1-b042-5093900a4e2f" ParentGuid="00000000-0000-0000-0000-000000000000" Value="User 1" />
+<OptionalValue Guid="4160c425-52a2-4592-845e-66977e699721" ParentGuid="00000000-0000-0000-0000-000000000000" Value="User 2" />
+<OptionalValue Guid="6f5d892a-f0f8-4a5b-ac43-396f96b961b5" ParentGuid="00000000-0000-0000-0000-000000000000" Value="User 3" />
+<OptionalValue Guid="22a82c2d-704b-47fe-a437-b2533988810c" ParentGuid="00000000-0000-0000-0000-000000000000" Value="User 4" />
+<OptionalValue Guid="9ca43683-ff9f-46b2-a10e-521558c946a6" ParentGuid="00000000-0000-0000-0000-000000000000" Value="User 5" />
+<OptionalValue Guid="f7603f21-f00f-4b64-8197-b7d41cba4d71" ParentGuid="00000000-0000-0000-0000-000000000000" Value="User 6" />
+<OptionalValue Guid="46a86ee8-b4d7-4bfb-8197-54f32765da31" ParentGuid="00000000-0000-0000-0000-000000000000" Value="User 7" />
+<OptionalValue Guid="511c38ce-6205-4eab-bc6b-f6fb388b12a8" ParentGuid="00000000-0000-0000-0000-000000000000" Value="User 8" />
+<OptionalValue Guid="7d84a248-e81d-4515-be8c-9c806149195f" ParentGuid="00000000-0000-0000-0000-000000000000" Value="User 9" />
+<OptionalValue Guid="7b673b86-160e-4b2a-9a13-079288d426c4" ParentGuid="00000000-0000-0000-0000-000000000000" Value="User 10" />
+<OptionalValue Guid="5a1e1f84-44b1-4cf5-b271-0412d33fb4a4" ParentGuid="00000000-0000-0000-0000-000000000000" Value="User 11" />
+</OptionalValuesList>
+</VariableSelectionList>
+</Variables>
+</Activity>
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Pass" ActivityName="Pass" AutomationStatus="Development" ErrorHandlerMappingType="AllAvailableHandlers" Guid="f6b52e17-ceec-45ae-98ad-7cb2ec633cab" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" TargetApplication="MyWebApp">
+<Acts>
+<ActDummy Active="True" Description="Dummy Action" Guid="f233a9d0-3bae-4ffe-bba5-60cae4c06cbf" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow" />
+</Acts>
+
+<Variables>
+<VariableSelectionList Guid="04fb80c7-051b-46d4-9fd4-3eae5d8cabf4" MappedOutputType="None" Name="Password" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" Value="Password 1">
+<OptionalValuesList>
+<OptionalValue Guid="326d2ffd-2871-4d57-978b-bfb8b7f88267" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Password 1" />
+<OptionalValue Guid="5f8a8598-bdc8-4959-bed1-10fc678c59ae" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Password 2" />
+<OptionalValue Guid="8e1e44f2-db7c-4b70-aca9-d5966c207113" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Password 3" />
+<OptionalValue Guid="5e93cc12-a5a6-4c26-b78c-4323e949d73d" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Password 4" />
+<OptionalValue Guid="5e1b4985-30ba-4934-b960-e7aa2ed3b770" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Password 5" />
+<OptionalValue Guid="86676ce2-03e7-423c-9570-f789fa692ce3" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Password 6" />
+<OptionalValue Guid="426404d1-2005-48a2-a18f-e2274ed30ec9" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Password 7" />
+<OptionalValue Guid="58b4a6b1-3015-42b6-8c63-86f348b0d56f" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Password 8" />
+<OptionalValue Guid="de423083-4b16-4d96-82f6-d4617bd2f575" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Password 9" />
+<OptionalValue Guid="f2640142-6de0-42f8-b0f1-96e050d4b4ae" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Password 10" />
+<OptionalValue Guid="b338161f-a20d-4b34-9bb8-5dc3aa4cf01e" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Password 11" />
+</OptionalValuesList>
+</VariableSelectionList>
+</Variables>
+</Activity>
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Demo" ActivityName="Demo" AutomationStatus="Development" ErrorHandlerMappingType="AllAvailableHandlers" Guid="2f3b6221-505a-4f0b-ab3c-1c107e818604" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" TargetApplication="MyWebApp">
+<Acts>
+<ActDummy Active="True" Description="Dummy Action" Guid="909a8e51-925b-435e-a10b-0dc087192d0c" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow" />
+</Acts>
+
+<Variables>
+<VariableString Guid="e3b1d8e6-e472-4c69-bf08-cbe3bd1f74e9" InitialStringValue="Ginger 123" MappedOutputType="None" Name="Address" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</Variables>
+</Activity>
+</Activities>
+
+<ActivitiesGroups>
+<ActivitiesGroup Guid="986d0772-f77c-4360-8223-11aaee838051" Name="Group" ParentGuid="00000000-0000-0000-0000-000000000000">
+<ActivitiesIdentifiers>
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="4d208b96-872a-465a-9e75-02f03e1e5489" ActivityName="Login_To_Google" Guid="28ceda0a-3642-4c9a-9798-146ad963232c" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</ActivitiesIdentifiers>
+</ActivitiesGroup>
+<ActivitiesGroup Guid="35542a48-7f46-4f55-a576-7d59cb0b30cb" Name="TDM" ParentGuid="00000000-0000-0000-0000-000000000000">
+<ActivitiesIdentifiers>
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="2e3f427a-5b85-4229-803b-3cba1ebb0443" ActivityName="Test1" Guid="3f650408-8ada-4466-a6ee-abc37b4f4e4d" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="19ed0922-3cea-4e10-9f82-1013244a8178" ActivityName="Test2" Guid="fe591d94-9554-4e89-9420-55a5d67149b7" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</ActivitiesIdentifiers>
+</ActivitiesGroup>
+<ActivitiesGroup Guid="2eb04809-c73f-4c6e-9e6d-b77182e6219d" Name="TDM Builder" ParentGuid="00000000-0000-0000-0000-000000000000">
+<ActivitiesIdentifiers>
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="a96f3de4-55a5-4ec6-adfd-37145f1f4bd3" ActivityName="Test3" Guid="3634fb38-251a-482f-80e2-7e3b08afe349" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</ActivitiesIdentifiers>
+</ActivitiesGroup>
+<ActivitiesGroup Guid="c0950b84-e596-4ec0-a8bb-09b767ad1e3a" Name="Web Testing for TDM" ParentGuid="00000000-0000-0000-0000-000000000000">
+<ActivitiesIdentifiers>
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="75fc66e2-42b5-4423-a5ac-eeb3c73d9075" ActivityName="User name" Guid="1f9a9257-ea53-41a4-a47e-218ed748152f" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</ActivitiesIdentifiers>
+</ActivitiesGroup>
+<ActivitiesGroup Guid="8fac313c-7cbe-4c2a-9cfa-51aa6bf0d1e9" Name="Pass" ParentGuid="00000000-0000-0000-0000-000000000000">
+<ActivitiesIdentifiers>
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="f6b52e17-ceec-45ae-98ad-7cb2ec633cab" ActivityName="Pass" Guid="f7913ce4-056f-4dc6-8fb9-616cf566fbcc" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</ActivitiesIdentifiers>
+</ActivitiesGroup>
+<ActivitiesGroup Guid="3858a424-2f02-46eb-a155-46cbb69f0f80" Name="Demo" ParentGuid="00000000-0000-0000-0000-000000000000">
+<ActivitiesIdentifiers>
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="2f3b6221-505a-4f0b-ab3c-1c107e818604" ActivityName="Demo" Guid="088d88a0-cc2d-4aeb-959c-18ef0b6a1c97" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</ActivitiesIdentifiers>
+</ActivitiesGroup>
+</ActivitiesGroups>
+
+<TargetApplications>
+<TargetApplication AppName="MyWebApp" Guid="06eb0df3-f958-4d53-9c8f-f26b9003fbc8" LastExecutingAgentName="MyWebApp - Agent 1" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</TargetApplications>
+</BusinessFlow></GingerRepositoryItem>
