@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<GingerRepositoryItem><Header ItemGuid="da935ac2-286b-4c53-947a-9beb2dee04d8" ItemType="BusinessFlow" CreatedBy="RUPESHD" Created="202001281013" GingerVersion="3.5.0.0" Version="87" LastUpdateBy="RUPESHD" LastUpdate="202001291138" />
+<GingerRepositoryItem><Header ItemGuid="da935ac2-286b-4c53-947a-9beb2dee04d8" ItemType="BusinessFlow" CreatedBy="RUPESHD" Created="202001281013" GingerVersion="3.5.0.0" Version="92" LastUpdateBy="RUPESHD" LastUpdate="202001300831" />
 <BusinessFlow Elapsed="9427" Guid="da935ac2-286b-4c53-947a-9beb2dee04d8" Name="Test TDM" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" Source="Ginger" Status="Unknown">
 <Activities>
 <Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="Login_To_Google" AutomationStatus="Development" ErrorHandlerMappingType="AllAvailableHandlers" Guid="4d208b96-872a-465a-9e75-02f03e1e5489" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" Publish="True" TargetApplication="MyWebApp">
@@ -93,6 +93,15 @@
 </VariableSelectionList>
 <VariableString Guid="39a7f170-771d-472f-aa04-cca7706ffff9" InitialStringValue="Test123" MappedOutputType="None" Name="Last Name" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" />
 <VariableString Guid="16cc1fe7-eb2b-4d83-ba77-ed59416eafdd" InitialStringValue="user_name1" MappedOutputType="None" Name="User name " ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" />
+<VariableString Guid="d138dc1b-f634-4a47-8c96-9e089a5dcf3a" InitialStringValue="Test1" MappedOutputType="None" Name="Test1" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<VariableSelectionList Guid="30ec3f9a-d389-4a1b-a722-6e25f3425fe9" MappedOutputType="None" Name="Test2" ParentGuid="00000000-0000-0000-0000-000000000000" Value="New1">
+<OptionalValuesList>
+<OptionalValue Guid="c11ee8f4-d5e4-40b5-b2fa-965f44ee5149" ParentGuid="00000000-0000-0000-0000-000000000000" Value="New1" />
+<OptionalValue Guid="bc12cc8c-aaae-47e8-b773-cff35c165ff7" ParentGuid="00000000-0000-0000-0000-000000000000" Value="New2" />
+<OptionalValue Guid="ed26edd8-f30b-4ea3-becb-4f733539f811" ParentGuid="00000000-0000-0000-0000-000000000000" Value="New3" />
+</OptionalValuesList>
+</VariableSelectionList>
+<VariableString Guid="680decc8-8e1f-4116-8055-f86175562de9" InitialStringValue="T3" MappedOutputType="None" Name="Test3" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </Variables>
 </Activity>
 <Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="TDM" ActivityName="Test1" AutomationStatus="Development" ErrorHandlerMappingType="AllAvailableHandlers" Guid="2e3f427a-5b85-4229-803b-3cba1ebb0443" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" Publish="True" TargetApplication="MyWebApp">
@@ -174,33 +183,33 @@
 <ActivitiesGroups>
 <ActivitiesGroup Guid="986d0772-f77c-4360-8223-11aaee838051" Name="Group" ParentGuid="00000000-0000-0000-0000-000000000000">
 <ActivitiesIdentifiers>
-<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="4d208b96-872a-465a-9e75-02f03e1e5489" ActivityName="Login_To_Google" Guid="c7f50883-b37a-48dd-a267-13958379ef63" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="4d208b96-872a-465a-9e75-02f03e1e5489" ActivityName="Login_To_Google" Guid="497c9717-9d18-48f0-8d61-4053be297d73" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </ActivitiesIdentifiers>
 </ActivitiesGroup>
 <ActivitiesGroup Guid="35542a48-7f46-4f55-a576-7d59cb0b30cb" Name="TDM" ParentGuid="00000000-0000-0000-0000-000000000000">
 <ActivitiesIdentifiers>
-<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="2e3f427a-5b85-4229-803b-3cba1ebb0443" ActivityName="Test1" Guid="fe49c95d-317e-4e8a-875c-9c05326878f1" ParentGuid="00000000-0000-0000-0000-000000000000" />
-<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="19ed0922-3cea-4e10-9f82-1013244a8178" ActivityName="Test2" Guid="e051f7f8-bdd7-4696-bd1f-3004ed54310b" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="2e3f427a-5b85-4229-803b-3cba1ebb0443" ActivityName="Test1" Guid="700f1a6a-a3dc-400b-a9c6-fad83c815773" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="19ed0922-3cea-4e10-9f82-1013244a8178" ActivityName="Test2" Guid="162d5b2c-e618-4ff2-886b-66531d017947" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </ActivitiesIdentifiers>
 </ActivitiesGroup>
 <ActivitiesGroup Guid="2eb04809-c73f-4c6e-9e6d-b77182e6219d" Name="TDM Builder" ParentGuid="00000000-0000-0000-0000-000000000000">
 <ActivitiesIdentifiers>
-<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="a96f3de4-55a5-4ec6-adfd-37145f1f4bd3" ActivityName="Test3" Guid="e6237d09-4c69-47e1-9d40-9b374dffa6f3" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="a96f3de4-55a5-4ec6-adfd-37145f1f4bd3" ActivityName="Test3" Guid="2428cfd6-c8c0-468d-9e6b-d82a0b1aceb1" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </ActivitiesIdentifiers>
 </ActivitiesGroup>
 <ActivitiesGroup Guid="c0950b84-e596-4ec0-a8bb-09b767ad1e3a" Name="Web Testing for TDM" ParentGuid="00000000-0000-0000-0000-000000000000">
 <ActivitiesIdentifiers>
-<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="75fc66e2-42b5-4423-a5ac-eeb3c73d9075" ActivityName="User name" Guid="ec6c0e2e-d6f2-4fc0-815c-ff706949985a" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="75fc66e2-42b5-4423-a5ac-eeb3c73d9075" ActivityName="User name" Guid="d659efa5-9d02-4875-8119-7015cf1f0889" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </ActivitiesIdentifiers>
 </ActivitiesGroup>
 <ActivitiesGroup Guid="8fac313c-7cbe-4c2a-9cfa-51aa6bf0d1e9" Name="Pass" ParentGuid="00000000-0000-0000-0000-000000000000">
 <ActivitiesIdentifiers>
-<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="f6b52e17-ceec-45ae-98ad-7cb2ec633cab" ActivityName="Pass" Guid="d47c6d9f-2661-48a8-81d2-a416f06a5a9c" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="f6b52e17-ceec-45ae-98ad-7cb2ec633cab" ActivityName="Pass" Guid="5017dc5a-2267-499d-87a9-446347768d6b" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </ActivitiesIdentifiers>
 </ActivitiesGroup>
 <ActivitiesGroup Guid="3858a424-2f02-46eb-a155-46cbb69f0f80" Name="Demo" ParentGuid="00000000-0000-0000-0000-000000000000">
 <ActivitiesIdentifiers>
-<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="2f3b6221-505a-4f0b-ab3c-1c107e818604" ActivityName="Demo" Guid="472811d9-8fff-481e-ac69-7074bf40bb6e" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="2f3b6221-505a-4f0b-ab3c-1c107e818604" ActivityName="Demo" Guid="d6b84604-7ecd-4f2d-82d6-c268567178b9" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </ActivitiesIdentifiers>
 </ActivitiesGroup>
 </ActivitiesGroups>
